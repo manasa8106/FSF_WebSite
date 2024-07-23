@@ -293,7 +293,7 @@ function App() {
 <Container>
       <Row className="my-4" id='industries'>
         <Col>
-          <h2 style={{ fontSize: '36px', paddingBottom: '110px' }}></h2>
+          <h2 style={{ fontSize: '36px', paddingBottom: '180px' }}></h2>
           <p style={{ fontSize: '24px' }}>
             Our services are driven across various industries and domains providing Digital Transformation Solutions & Automation Services.
           </p>
