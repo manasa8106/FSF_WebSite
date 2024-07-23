@@ -1,0 +1,139 @@
+.navbar {
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  margin-right: 20px;
+  
+}
+
+.navbar-scrolled {
+  background-color: #333; /* Change this to the desired color */
+}
+
+.carousel {
+  margin-bottom: 40px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 913px; /* increased height for laptop view */
+  object-fit: cover;
+}
+
+/* For mobile view (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .carousel-inner img {
+    height: 400px; /* adjusted height for mobile view */
+  }
+}
+
+/* inner text */
+
+.carousel-caption h3
+ {
+  padding: 30px; /* Padding for h3 and p */
+  background-color: rgb(109, 4, 4); /* Semi-transparent background */
+  margin: 5px 0; /* Margin between h3 and p */
+
+  margin-right: 50px; /* Add 20px margin to the left */
+}
+
+/* Services Section Styles */
+.Services {
+  padding: 80px 0; /* Adjust top and bottom padding */
+}
+
+.Services h2 {
+  font-size: 2.5rem; /* Font size of section title */
+}
+.Services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Services ul li {
+  font-size: 1.5rem; /* Font size of list items */
+  margin-bottom: 10px;
+}
+.industry-card {
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.5rem; 
+  border: 1px solid #dee2e6; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.industry-card:hover {
+  transform: scale(1.05); 
+  background-color: #f8f9fa; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.industry-card .bi {
+  font-size: 2rem;
+  color: #007bff;
+}
+.industry-card .d-flex {
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  /* Styles for large screens */
+}
+
+@media (max-width: 992px) {
+  /* Styles for medium screens */
+}
+
+@media (max-width: 768px) {
+  /* Styles for small screens */
+  .industry-card .bi {
+    font-size: 1.5rem; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Styles for extra small screens */
+  .industry-card .bi {
+    font-size: 1.25rem; /* Further adjust icon size */
+  }
+}
+.box:hover .service-element {
+  visibility: hidden;
+}
+
+
+.clients-logos img {
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+  margin: 10px;
+}
+
+.box {
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.service-info {
+  transition: margin 0.3s ease-in-out;
+}
+
+.box:hover .service-info {
+  margin-top: -20px;
+}
+
+.service-element {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.box:hover .service-element {
+  opacity: 0;
+}
