@@ -9,7 +9,7 @@ import nine from './images/nine.jpeg';
 import sbp from './images/sbp.jpeg';
 import bigg from './images/bigg.jpeg';
 import one from './images/one.png';
-import two from './images/two.png';
+import two from './images/two.jpg';
 import three from './images/three.png';
 
 function App() {
@@ -100,10 +100,7 @@ function App() {
         />
         <Carousel.Caption>
           <div className="carousel-caption">
-            <div className="col-12 col-sm-10 col-md-8 col-lg-6 offset-sm-1 offset-md-2 offset-lg-3">
-              <h3 style={{ fontSize: 'calc(1.2rem + 0.5vw)' }}>Providing Industrial Outreach  
-              & Innovative Solutions</h3>
-            </div>
+            
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -116,10 +113,7 @@ function App() {
         />
         <Carousel.Caption>
           <div className="carousel-caption">
-            <div className="col-12 col-sm-10 col-md-8 col-lg-6 offset-sm-1 offset-md-2 offset-lg-3">
-              <h3 style={{ fontSize: 'calc(1.2rem + 0.5vw)' }}>Providing Industrial Outreach  
-              & Innovative Solutions</h3>
-            </div>
+            
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -132,10 +126,7 @@ function App() {
         />
         <Carousel.Caption>
           <div className="carousel-caption">
-            <div className="col-12 col-sm-10 col-md-8 col-lg-6 offset-sm-1 offset-md-2 offset-lg-3">
-              <h3 style={{ fontSize: 'calc(1.2rem + 0.5vw)' }}>Providing Industrial Outreach  
-              & Innovative Solutions</h3>
-            </div>
+            
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -148,10 +139,7 @@ function App() {
         />
         <Carousel.Caption>
           <div className="carousel-caption">
-            <div className="col-12 col-sm-10 col-md-8 col-lg-6 offset-sm-1 offset-md-2 offset-lg-3">
-              <h3 style={{ fontSize: 'calc(1.2rem + 0.5vw)' }}>Providing Industrial Outreach  
-              & Innovative Solutions</h3>
-            </div>
+            
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -164,10 +152,7 @@ function App() {
         />
         <Carousel.Caption>
           <div className="carousel-caption">
-            <div className="col-12 col-sm-10 col-md-8 col-lg-6 offset-sm-1 offset-md-2 offset-lg-3">
-              <h3 style={{ fontSize: 'calc(1.2rem + 0.5vw)' }}>Providing Industrial Outreach  
-              & Innovative Solutions</h3>
-            </div>
+            
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -290,7 +275,7 @@ function App() {
           className="btn-block" 
         >
         
-        Outstanding Execution
+        Execution
         </Button>
         <Collapse in={anotherOpen}>
           <Card.Text style={{ backgroundColor: anotherOpen ? 'brown' : 'whitesmoke', color: clickOpen ? 'whitesmoke' : 'black', fontSize: 24 }} className="text-center">
@@ -304,10 +289,11 @@ function App() {
 </div>
   </div>
 </div>
+{/* Industries Section */}
 <Container>
       <Row className="my-4" id='industries'>
         <Col>
-          <h2 style={{ fontSize: '36px', marginBottom: '140px', paddingBottom: '80px' }}></h2>
+          <h2 style={{ fontSize: '36px', paddingBottom: '110px' }}></h2>
           <p style={{ fontSize: '24px' }}>
             Our services are driven across various industries and domains providing Digital Transformation Solutions & Automation Services.
           </p>
@@ -329,11 +315,13 @@ function App() {
         ))}
       </Row>
     </Container>
+    {/* end of Industries Section */}
+    
       {/* Services Section */}
-<section id="services" className="Services" style={{backgroundColor: 'white'}}>
-      <Container>
-        {/* <h2 className="text-center mb-5">Services</h2> */}
-        <p className="services-list" style={{fontSize: '20px', marginTop: '95px'}}>
+      <section id="services" className="Services" style={{ backgroundColor: 'white' }}>
+      <Container fluid>
+         <h2 className="text-center mb-5" style={{ paddingBottom: '110px'}}></h2> 
+        <p className="services-list" style={{ fontSize: '24px' }}>
           Our Services Consist of: UI/UX, Product Development (Web/Mobile), Cloud Migration, Saas Application Development, Server Management, Resource Outsourcing, US IT Staffing, SAP Training & Development, Robotics and Corporate Event Management.
         </p>
       </Container>
@@ -341,90 +329,89 @@ function App() {
       {/* Three Boxes Section */}
       <section className="ThreeBoxes">
         <Container>
-        <Row>
-  <Col lg={4} md={6} className="mb-4">
-    <div className="box" style={{ backgroundColor: 'whitesmoke', padding: '20px', borderRadius: '30px' , marginTop: '30px'}}>
-      <div className="service-element">
-        <i className="bi bi-cloud" style={{ fontSize: '56px', color: 'maroon' }}></i>
-      </div>
-      <div className="service-info">
-        <h3>Digital Transformation</h3>
-        <p className="margin b-5" style={{fontSize: '20px'}}>
-          Uncover the Possibilities of Digital Transformation with Cloud Integrated Product Development.
-        </p>
-      </div>
-    </div>
-  </Col>
-  <Col lg={4} md={6} className="mb-4">
-    <div className="box" style={{ backgroundColor: 'whitesmoke', padding: '20px' , borderRadius: '30px' , marginTop: '30px'}}>
-      <div className="service-element">
-        <i className="bi bi-terminal" style={{ fontSize: '56px', color: 'maroon' }}></i>
-      </div>
-      <div className="service-info">
-        <h3>IoT Solution Integrations</h3>
-        <p className="margin b-6" style={{fontSize: '20px'}}>
-          Unlock The Power of Connectivity with IoT Solution Integration in various industries and domains.
-        </p>
-      </div>
-    </div>
-  </Col>
-  <Col lg={4} md={6} className="mb-4">
-    <div className="box" style={{ backgroundColor: 'whitesmoke', padding: '20px', borderRadius: '30px'  , marginTop: '30px'}}>
-      <div className="service-element">
-        <i className="bi bi-robot" style={{ fontSize: '56px', color: 'maroon' }}></i>
-      </div>
-      <div className="service-info">
-        <h3>Industrial Automation</h3>
-        <p className="margin b-5" style={{fontSize: '20px'}}>
-          Automate Your Business Processes With Powerful AI/Ml Integrated Method Solution Implementations.
-        </p>
-      </div>
-    </div>
-  </Col>
-</Row>
+          <Row>
+            <Col lg={4} md={6} className="mb-4">
+              <div className="box" style={{ backgroundColor: 'whitesmoke', padding: '20px', borderRadius: '30px', marginTop: '30px' }}>
+                  <i className="bi bi-cloud" style={{ fontSize: '56px',  color: '#007bff' }}></i>
+               
+                <div className="service-info">
+                  <h3 style={{color: 'maroon'}}>Digital Transformation</h3>
+                  <p className="margin b-5" style={{ fontSize: '20px' }}>
+                    Uncover the Possibilities of Digital Transformation with Cloud Integrated Product Development.
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col lg={4} md={6} className="mb-4">
+              <div className="box" style={{ backgroundColor: 'whitesmoke', padding: '20px', borderRadius: '30px', marginTop: '30px' }}>
+                
+                  <i className="bi bi-terminal" style={{ fontSize: '56px',color: '#007bff'}}></i>
+               
+                <div className="service-info">
+                  <h3 style={{color: 'maroon'}}>IoT Solution Integrations</h3>
+                  <p className="margin b-6" style={{ fontSize: '20px' }}>
+                    Unlock The Power of Connectivity with IoT Solution Integration in various industries and domains.
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col lg={4} md={6} className="mb-4">
+              <div className="box" style={{ backgroundColor: 'whitesmoke', padding: '20px', borderRadius: '30px', marginTop: '30px' }}>
+               
+                  <i className="bi bi-robot" style={{ fontSize: '56px', color: '#007bff' }}></i>
+               
+                <div className="service-info">
+                  <h3 style={{color: 'maroon'}}>Industrial Automation</h3>
+                  <p className="margin b-5" style={{ fontSize: '20px' }}>
+                    Automate Your Business Processes With Powerful AI/Ml Integrated Method Solution Implementations.
+                  </p>
+                </div>
+              </div>
+            </Col>
+          </Row>
 
           {/* Additional Row of Boxes */}
           <Row>
-  <Col lg={4} md={6} className="mb-4">
-    <div className="box" style={{ backgroundColor: 'whitesmoke', padding: '20px', borderRadius: '30px', marginTop: '30px' }}>
-      <div className="service-element">
-        <i className="bi bi-lock" style={{ fontSize: '56px', color: 'maroon',  }}></i>
-      </div>
-      <div className="service-info">
-        <h3 style={{ transition: 'margin 0.3s ease-in-out' }}>Information Security</h3>
-        <p className="margin b-5" style={{ fontSize: '20px', transition: 'margin 0.3s ease-in-out' }}>
-          Keep Your Data Safe With Our Top-Notch Cyber/Data Security Solution Deployments.
-        </p>
-      </div>
-    </div>
-  </Col>
-  <Col lg={4} md={6} className="mb-4">
-    <div className="box" style={{ backgroundColor: 'whitesmoke', padding: '20px', marginTop: '30px' }}>
-      <div className="service-element">
-        <i className="bi bi-people" style={{ fontSize: '56px', color: 'maroon' }}></i>
-      </div>
-      <div className="service-info">
-        <h3 style={{ transition: 'margin 0.3s ease-in-out' }}>Staff Augmentation</h3>
-        <p className="margin b-5" style={{ fontSize: '20px', transition: 'margin 0.3s ease-in-out' }}>
-          Accelerate Your Company's Growth with our Professional Staff Augmentation and Outsourcing.
-        </p>
-      </div>
-    </div>
-  </Col>
-  <Col lg={4} md={6} className="mb-4">
-    <div className="box" style={{ backgroundColor: 'whitesmoke', padding: '20px', borderRadius: '30px', marginTop: '30px' }}>
-      <div className="service-element">
-        <i className="bi bi-file-earmark-spreadsheet" style={{ fontSize: '56px', color: 'maroon' }}></i>
-      </div>
-      <div className="service-info">
-        <h3 style={{ transition: 'margin 0.3s ease-in-out' }}>SAP Solutions</h3>
-        <p className="margin b-5" style={{ fontSize: '20px', transition: 'margin 0.3s ease-in-out' }}>
-          Helping Peers to Learn, Grow & Succeed with our SAP Training and Development Program!
-        </p>
-      </div>
-    </div>
-  </Col>
-</Row>
+            <Col lg={4} md={6} className="mb-4">
+              <div className="box" style={{ backgroundColor: 'whitesmoke', padding: '20px', borderRadius: '30px', marginTop: '30px' }}>
+                
+                  <i className="bi bi-lock" style={{ fontSize: '56px', color: '#007bff' }}></i>
+               
+                <div className="service-info">
+                  <h3 style={{ transition: 'margin 0.3s ease-in-out', color: 'maroon' }}>Information Security</h3>
+                  <p className="margin b-5" style={{ fontSize: '20px', transition: 'margin 0.3s ease-in-out' }}>
+                    Keep Your Data Safe With Our Top-Notch Cyber/Data Security Solution Deployments.
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col lg={4} md={6} className="mb-4">
+              <div className="box" style={{ backgroundColor: 'whitesmoke', padding: '20px', marginTop: '30px' }}>
+               
+                  <i className="bi bi-people" style={{ fontSize: '56px', color: '#007bff' }}></i>
+               
+                <div className="service-info">
+                  <h3 style={{ transition: 'margin 0.3s ease-in-out' , color: 'maroon'}}>Staff Augmentation</h3>
+                  <p className="margin b-5" style={{ fontSize: '20px', transition: 'margin 0.3s ease-in-out' }}>
+                    Accelerate Your Company's Growth with our Professional Staff Augmentation and Outsourcing.
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col lg={4} md={6} className="mb-4">
+              <div className="box" style={{ backgroundColor: 'whitesmoke', padding: '20px', borderRadius: '30px', marginTop: '30px' }}>
+               
+                  <i className="bi bi-file-earmark-spreadsheet" style={{ fontSize: '56px', color: '#007bff' }}></i>
+               
+                <div className="service-info">
+                  <h3 style={{ transition: 'margin 0.3s ease-in-out', color: 'maroon' }}>SAP Solutions</h3>
+                  <p className="margin b-5" style={{ fontSize: '20px', transition: 'margin 0.3s ease-in-out' }}>
+                    Helping Peers to Learn, Grow & Succeed with our SAP Training and Development Program!
+                  </p>
+                </div>
+              </div>
+            </Col>
+          </Row>
         </Container>
       </section>
     </section>
@@ -435,10 +422,10 @@ function App() {
 <div id="Teams"className="row mb-4">
     <div className="col-8 text-center">
     
-      <h2 style={{
+      <h2 style={{paddingTop: '110px'
        
       }}>It Takes A Team To Reach The Top!</h2>
-     <p className="col-12 text-center" style={{ fontSize: 'calc(0.9rem + 0.5vw)', marginTop: '82px',marginLeft: '30px' }}>
+     <p className="col-12 text-center" style={{ fontSize: 'calc(0.9rem + 0.5vw)',paddingTop: '30px', marginLeft: '30px' }}>
   Expertise is the fuel that drives a team towards their goals and helps them
 </p>
 <p className="col-12 text-center" style={{ fontSize: 'calc(0.9rem + 0.5vw)' ,marginLeft: '30px' }}>
@@ -529,7 +516,7 @@ function App() {
 <Container className="clients-logos" id="client" style={{ marginTop: '110px'}}>
       <h2 style={{ marginBottom: '120px'}}>Our Clients & Partners</h2>
       <p style={{ marginBottom: '60px', fontSize: '20px'}}>Forever, We thrive to maintain Successful Relationships with our Clients and Partners to showcase a healthy relationship and improving opportunities.</p>
-      <Row>
+      <Row className='d-flex justify-content-center '>
   <Col xs={6} md={4} lg={3} xl={2}>
     <img src={nine} alt="Client Logo 1" className="img-fluid" style={{ width: '150px', height: '100px' }} />
   </Col>
@@ -548,15 +535,15 @@ function App() {
 <Container fluid className="contact-section" id='contact'>
   <Row className="justify-content-center">
     <Col lg={8} md={10} sm={12} xs={12}>
-      <h1 style={{ marginTop: '90px', textAlign: 'center' }}>IT Development & Recruitments</h1>
-      <h3 style={{ marginTop: '40px', textAlign: 'center' }}>
+      <h1 style={{ marginTop: '120px', textAlign: 'center' }}>IT Development & Recruitments</h1>
+      <h4 style={{ marginTop: '40px', textAlign: 'center' }}>
         1-98/3/F/3, Plot No 5, 3rd Floor, KPR Avenue, VIP Hills, Jaihind Enclave, Madhapur, Hyderabad, Telangana 500081
-      </h3>
+      </h4>
       <Row className="contact-info">
         <Col xs={12} md={6} lg={4}>
           <strong style={{ fontSize: '24px' }}>Phone:</strong>
           <br />
-          <span style={{ fontSize: '24px' }}>9100632143</span>
+          <span style={{ fontSize: '24px' }}>+9100632143</span>
         </Col>
         <Col xs={12} md={6} lg={4}>
           <strong style={{ fontSize: '24px' }}>Gmail:</strong>
@@ -589,13 +576,13 @@ function App() {
   <Container>
     <Row>
       <Col xs={12} md={3} style={{ marginBottom: '20px' }}>
-        <h5 style={{color: 'deeppink', fontSize: '30px' , fontWeight: 'bolder'}}>About Us</h5>
+        <h5 style={{color: 'whitesmoke', fontSize: '30px' , fontWeight: 'bolder'}}>About Us</h5>
         <p style={{ fontSize: '20px', margin: '30px 0' }}>
         FSF Global IT Solutions is the most popular service provider for customers looking for product development and employee outsourcing firm with a highly diversified and flexible approach of providing expert quality on end-to-end solutions for customers.
         </p>
       </Col>
       <Col xs={12} md={3} style={{ marginBottom: '20px' }}>
-        <h5 style={{color: 'deeppink', fontSize: '30px' , fontWeight: 'bolder'}}>Sitemap</h5>
+        <h5 style={{color: 'whitesmoke', fontSize: '30px' , fontWeight: 'bolder'}}>Sitemap</h5>
         <ul style={{ listStyle: 'none', padding: '0', margin: '30px 0' }}>
           <li><a href="#" style={{ textDecoration: 'none', color: '#ffffff' }}>IT & Development</a></li>
           <li><a href="#" style={{ textDecoration: 'none', color: '#ffffff' }}>Cyber Security</a></li>
@@ -606,27 +593,27 @@ function App() {
         </ul>
       </Col>
       <Col xs={12} md={3} style={{ marginBottom: '20px' }}>
-        <h5 style={{color: 'deeppink', fontSize: '30px' , fontWeight: 'bolder'}}>Contact</h5>
+        <h5 style={{color: 'whitesmoke', fontSize: '30px' , fontWeight: 'bolder'}}>Contact</h5>
         <p style={{ fontSize: '18px', margin: '30px 0' }}>
-          <i className="fas fa-map-marker-alt" style={{ fontSize: '36px', marginRight: '20px', color: 'deepskyblue' }}></i>
-          L-7, 1/2/3, 6th Floor,<br />Skywalk Building, Assaye Road,<br />Ulsoor, Bengaluru - 560042.
+          <i className="fas fa-map-marker-alt flex-column" style={{ fontSize: '36px', marginRight: '20px', color: 'white'}}></i>
+          Backside of Amma Nilayam, Address : 1-98/3/F/3, Plot No 5, 3rd Floor, KPR Avenue, VIP Hills, Jaihind Enclave, Madhapur, Hyderabad, Telangana 500081
         </p>
         <p style={{ fontSize: '18px', margin: '30px 0' }}>
-          <i className="fas fa-envelope" style={{ fontSize: '36px', marginRight: '20px', color: 'deepskyblue' }}></i>
-          <a href="mailto:info@9thdimension.co.in" style={{ textDecoration: 'none', color: '#ffffff' }}>info@9thdimension.co.in</a><br />
-          <i className="fas fa-phone" style={{ fontSize: '36px', marginRight: '25px', margin: '30px 0', color: 'deepskyblue' }}></i>
-          080 - 46684445
+          <i className="fas fa-envelope" style={{ fontSize: '36px', marginRight: '20px', color: 'white'}}></i>
+          <a href="mailto:info@9thdimension.co.in" style={{ textDecoration: 'none', color: '#ffffff' }}>info@fullstackfresher.com</a><br />
+          <i className="fas fa-phone" style={{ fontSize: '36px', marginRight: '100px', padding: '30px 0px' ,color: 'white'}}></i>
+          +9100632143
         </p>
       </Col>
       <Col xs={12} md={3} style={{ marginBottom: '20px' }}>
         <Row>
 
           <Col xs={10} md={10} style={{ paddingLeft: '0' }}>
-            <h5 style={{color: 'deeppink', fontSize: '30px' , fontWeight: 'bolder'}}>Follow us</h5>
+            <h5 style={{color: 'whitesmoke', fontSize: '30px' , fontWeight: 'bolder'}}>Follow us</h5>
             <ul style={{ listStyle: 'none', padding: '0', margin: '30px 0' }}>
               <li><a href="#" target="_blank" style={{ textDecoration: 'none', color: '#ffffff'}}><i className="fab fa-facebook-f" style={{ fontSize: '36px', marginRight: '10px' }}></i></a></li>
-              <li><a href="#" target="_blank" style={{ textDecoration: 'none', color: '#ffffff' }}><i className="fab fa-twitter" style={{ fontSize: '36px', marginRight: '10px' }}></i></a></li>
-              <li><a href="#" target="_blank" style={{ textDecoration: 'none', color: '#ffffff' }}><i className="fab fa-linkedin-in" style={{ fontSize: '36px', marginRight: '10px' }}></i></a></li>
+              <li><a href="#" target="_blank" style={{ textDecoration: 'none', color: '#ffffff' }}><i className="fab fa-twitter" style={{ fontSize: '36px', marginRight: '10px',marginTop: '30px' }}></i></a></li>
+              <li><a href="#" target="_blank" style={{ textDecoration: 'none', color: '#ffffff' }}><i className="fab fa-linkedin-in" style={{ fontSize: '36px', marginRight: '10px',marginTop: '30px' }}></i></a></li>
             </ul>
           </Col>
         </Row>
